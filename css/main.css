@@ -9,6 +9,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans";
+    font-size: 1.0em;
     scroll-behavior: smooth;
 }
 
@@ -102,12 +103,19 @@ nav > ul {
 	display: flex;
 	flex-direction: column;
 }
+#home > p {
+	line-height: 25px;
+	padding: 10% 0 10% 0;
+}
 #home > p > strong {
 	color: #ffba00;
 }
 #home > button {
 	margin: 10% 0 0 0;
 	padding: 5%;
+	background: white;
+	border: 1px solid #ffba00;
+	color: #ffba00;
 }
 
 #intro > img {
