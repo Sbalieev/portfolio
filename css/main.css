@@ -59,156 +59,184 @@ footer {
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen   
+	and (min-device-width : 320px)   
+	and (max-device-width : 480px) {
 
-body {
-	line-height: 40px;
-}
-#navbar {
-	display: flex;
-	background: #f4f4f4;
-	height: 100px;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-}
+	body {
+		line-height: 40px;
+	}
+	#navbar {
+		display: flex;
+		background: #f4f4f4;
+		height: 80px;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		position: sticky;
+		-webkit-position: sticky;
+		/* negative top allows for 16 pixels of movement before sticking */
+		top: -16px; 
+		/* make sure header overlaps main*/
+		z-index: 1;
+	}
 
-nav {
-	display: flex;
-	background: #f4f4f4;
-	width: 80%;
-	flex: 1;
-}
+	nav {
+		display: flex;
+		background: #f4f4f4;
+		width: 80%;
+		flex: 1;
 
-#nav-links {
-	display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0px;
-}
+	}
 
-#nav-links > li > a {
-	color: #2d425e;
-}
-#nav-links > li > a:hover {
-	text-decoration: none;
-	color: #ffba00;
-}
+	#nav-links {
+		display: flex;
+	    list-style-type: none;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-bottom: 0px;
+	}
 
-#logo {
-	display: none;
-}
+	#nav-links > li > a {
+		color: #2d425e;
+	}
+	#nav-links > li > a:hover {
+		text-decoration: none;
+		color: #ffba00;
+	}
 
-nav > ul {
-	flex: 1;
-}
+	#logo {
+		display: none;
+	}
 
-#base {
-	width: 80%;
-	flex: 1;
-	align-self: center;
-}
+	nav > ul {
+		flex: 1;
+	}
 
-#home {
-	padding: 30% 0 0 0;
-	display: flex;
-	flex-direction: column;
-}
-#home > p {
-	line-height: 25px;
-	padding: 5% 0 5% 0;
-}
-#home > p > strong {
-	color: red;
-}
-#home > button {
-	margin: 10% 0 0 0;
-	padding: 5%;
-	background: white;
-	border: 1px solid #ffba00;
-	color: #ffba00;
-}
+	#base {
+		width: 80%;
+		flex: 1;
+		align-self: center;
+	}
 
-#intro > img {
-	width: 100%;
-	margin-bottom: 10%;
-}
-#intro > img:nth-child(2) {
-	display: none;
-}
+	#home {
+		padding: 30% 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+	#home > p {
+		line-height: 25px;
+		padding: 5% 0 5% 0;
+	}
+	#home > p > strong {
+		color: #ffba00;
+	}
+	#home > button {
+		margin: 10% 0 0 0;
+		padding: 5%;
+		background: white;
+		border: 1px solid #ffba00;
+		color: #ffba00;
+	}
 
-
-/* ---------- ABOUT ME  ------------- */
-
-#aboutme {
-    flex: 1;
-    display: flex;
-    background: #f4f4f4;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10%;
-    padding: 15% 0 15% 0;
-}
-
-#paragraaf {
-	text-align: center;
-    width: 80%;
-}
-#paragraaf > h1 {
-	margin-bottom: 15%;
-}
-#paragraaf > h5 {
-	margin-bottom: 5%;
-}
-#paragraaf > p { 
-	text-align: justify;
-}
-
-/* --------- kenmerken ---------- */
-
-#foto {
-	display: none;
-}
-#naam {
-	padding: 15% 0 0 0;
-    color: #2d425e;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#kenmerken {
-	display: flex;
-	flex-direction: row;
-	text-align: left;
-}
-
-#gegevens {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
+	#intro > img {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+	#intro > img:nth-child(2) {
+		display: none;
+	}
 
 
-.data {
-	list-style-type: none;
-	flex: 1 0 50%;
-}
-.skills {
-	flex: 1 0 33%;
-}
-.antwoord {
-	color: #969696;
+	/* ---------- ABOUT ME  ------------- */
+
+	#aboutme {
+	    flex: 1;
+	    display: flex;
+	    background: #f4f4f4;
+	    align-items: center;
+	    flex-direction: column;
+	    margin-top: 10%;
+	    padding: 15% 0 15% 0;
+	}
+
+	#paragraaf {
+		text-align: center;
+	    width: 80%;
+	}
+	#paragraaf > h1 {
+		margin-bottom: 15%;
+	}
+	#paragraaf > h5 {
+		margin-bottom: 5%;
+	}
+	#paragraaf > p { 
+		text-align: justify;
+	}
+
+	/* --------- kenmerken ---------- */
+
+	#foto {
+		display: none;
+	}
+	#naam {
+		padding: 15% 0 0 0;
+	    color: #2d425e;
+	    font-size: 2em;
+	    font-weight: bold;
+	}
+
+	#kenmerken {
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+	}
+
+	#gegevens {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+
+	.data {
+		list-style-type: none;
+		flex: 1 0 50%;
+	}
+	.skills {
+		flex: 1 0 33%;
+	}
+	.antwoord {
+		color: #969696;
+	}
+
+	.kopstuk {
+		flex: 1 0 100%;
+		padding: 15% 0 0 0;
+		color: #969696;
+		font-weight: bold;
+	}
+
+	/* ----------- PORTFOLIO ------------ */
+
+	#portfolio {
+	    display: flex;
+	    background: red;
+	    align-items: center;
+	    flex-direction: column;
+	}
+
+	#projects {
+		background: blue;
+		width: 80%;
+	}
 }
 
-.kopstuk {
-	flex: 1 0 100%;
-	padding: 15% 0 0 0;
-	color: #969696;
-	font-weight: bold;
-}
+
+/* --------- ALL IPADS ---------------- */
+
+@media only screen   
+and (min-device-width : 481px)   
+and (max-device-width : 1024px) {
 
 }
