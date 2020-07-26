@@ -18,12 +18,17 @@ p {
 }
 h1 {
 	color: #2d425e;
-    font-size: 29px;
+    font-size: 2em;
     font-weight: bold;
 }
 h5 {
 	color: #969696;
     font-weight: normal;
+}
+
+cite,
+strong {
+	color: #ffba00;
 }
 
 a:link,
@@ -221,14 +226,46 @@ footer {
 
 	#portfolio {
 	    display: flex;
-	    background: red;
 	    align-items: center;
 	    flex-direction: column;
+    	padding: 15% 0 15% 0;
 	}
 
 	#projects {
-		background: blue;
 		width: 80%;
+	}
+
+	.project {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.projectTitel {
+		flex: 1 0 100%;
+	}
+
+	.skillUsed {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+	}
+
+	.skillUsed > li {
+		flex: 1 0 33%;
+	}
+
+	.example-image {
+		width: 80%;
+	}
+}
+
+/* --------- Skills used aanpassen alleen ---------------- */
+
+@media only screen   
+and (max-device-width : 403px)  {
+		.skillUsed > li {
+		flex: 1 0 26%;
 	}
 }
 
