@@ -13,6 +13,19 @@ body, html {
     scroll-behavior: smooth;
 }
 
+p {
+	color: #515151;
+}
+h1 {
+	color: #2d425e;
+    font-size: 29px;
+    font-weight: bold;
+}
+h5 {
+	color: #969696;
+    font-weight: normal;
+}
+
 a:link,
 a:active,
 a:focus,
@@ -52,6 +65,9 @@ footer {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 
+body {
+	line-height: 40px;
+}
 #navbar {
 	display: flex;
 	background: #f4f4f4;
@@ -105,7 +121,7 @@ nav > ul {
 }
 #home > p {
 	line-height: 25px;
-	padding: 10% 0 10% 0;
+	padding: 5% 0 5% 0;
 }
 #home > p > strong {
 	color: #ffba00;
@@ -124,6 +140,76 @@ nav > ul {
 }
 #intro > img:nth-child(2) {
 	display: none;
+}
+
+
+/* ---------- ABOUT ME  ------------- */
+
+#aboutme {
+    flex: 1;
+    display: flex;
+    background: #f4f4f4;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    padding: 15% 0 15% 0;
+}
+
+#paragraaf {
+	text-align: center;
+    width: 80%;
+}
+#paragraaf > h1 {
+	margin-bottom: 15%;
+}
+#paragraaf > h5 {
+	margin-bottom: 5%;
+}
+#paragraaf > p { 
+	text-align: justify;
+}
+
+/* --------- kenmerken ---------- */
+
+#foto {
+	display: none;
+}
+#naam {
+	padding: 15% 0 0 0;
+    color: #2d425e;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#kenmerken {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+}
+
+#gegevens {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.data {
+	list-style-type: none;
+	flex: 1 0 50%;
+}
+.skills {
+	flex: 1 0 33%;
+}
+.antwoord {
+	color: #969696;
+}
+
+.kopstuk {
+	flex: 1 0 100%;
+	padding: 15% 0 0 0;
+	color: #969696;
+	font-weight: bold;
 }
 
 }
