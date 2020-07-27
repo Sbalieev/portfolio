@@ -81,9 +81,10 @@ footer {
 		position: sticky;
 		-webkit-position: sticky;
 		/* negative top allows for 16 pixels of movement before sticking */
-		top: -16px; 
+		top: 0; 
 		/* make sure header overlaps main*/
 		z-index: 1;
+		box-shadow: 0 5px 13px 0px #2d425e82;
 	}
 
 	nav {
@@ -271,6 +272,18 @@ footer {
 		list-style-type: none;
 	}
 
+	.requirements {
+		width: 100%;
+	}
+
+	.example-image-link {
+		padding: 10% 0 10% 0;
+	}
+
+	.example-image {
+		width: 100%;
+	}
+
 	/* ------------------ CONTACT ------------ */
 
 	#contact {
@@ -293,6 +306,7 @@ footer {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		text-align: center;
 	}
 
 	#social > li {
@@ -300,12 +314,10 @@ footer {
 	}
 }
 
-/* --------- Skills used aanpassen alleen ---------------- */
-
 @media only screen   
 and (max-device-width : 403px)  {
 		.skillUsed > li {
-		flex: 1 0 26%;
+		flex: 1;
 	}
 }
 
