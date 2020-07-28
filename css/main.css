@@ -23,6 +23,7 @@ h1 {
 h5 {
 	color: #969696;
     font-weight: normal;
+    font-size: 1em;
 }
 
 cite,
@@ -661,22 +662,29 @@ and (min-device-width : 1025px)   {
 
 #base > #home > button {
 	padding: 2%;
-	width: 40%;
-	background: none;
-	border: 2px solid #ffba00;
-	color: #ffba00;
+	width: 25%;
+	background: #ffba00;
+	border: 2px solid #e4a700;
+	border-radius: 5px 5px 5px 5px;
+	color: white;
 	margin: 5% 0 0 0;
 	transition: all 0.5s;
+	letter-spacing: 2px;
+}
+#base > #home > button:hover {
+	background: #2d425e;
+	border: 1px solid #1c2735;
+	width: 35%;
 }
 
-#base > #home > button > span {
+#base > #home > button > a > span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-#base > #home > button > span:after {
+#base > #home > button > a > span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -685,11 +693,11 @@ and (min-device-width : 1025px)   {
   transition: 0.5s;
 }
 
-#base > #home > button:hover span {
+#base > #home > button:hover a span {
   padding-right: 25px;
 }
 
-#base > #home > button:hover span:after {
+#base > #home > button:hover a span:after {
   opacity: 1;
   right: 0;
 }
@@ -819,15 +827,13 @@ ul > li > h6 {
     align-self: center;
 }
 #projects > h1 {
-	margin-bottom: 15%;
+	margin-bottom: 5%;
 }
-#projects > h5 {
-	margin-bottom: 10%;
-}
+
 
 .project {
 	text-align: justify;
-	padding: 15% 0 10% 0;
+	padding: 5% 0 5% 0;
 	border-bottom: 1px solid #ffe299;
 	color: #515151;
 }
@@ -842,9 +848,11 @@ ul > li > h6 {
 .project > p > strong {
 	color: #ffba00;
 }
-.project > h4 {
+
+.projectTitel {
 	font-weight: bold;
 	color: #ffba00;
+	font-size: 1.5em;
 }
 
 .projectImages {
@@ -853,6 +861,14 @@ ul > li > h6 {
 
 .requirements {
 	width: 100%;
+	padding: 5% 0 5% 0;
+}
+.requirements > h6 {
+	font-size: 1em;
+}
+
+.example-image {
+	width: 50%;
 	padding: 5% 0 5% 0;
 }
 
@@ -885,7 +901,8 @@ ul > li > h6 {
 }
 
 #logos > h5 {
-	margin: 15% 0 15% 0;
+	margin: 5% 0 0 0;
+	font-size: 1vw;
 }
 
 #logos > ul {
@@ -893,8 +910,8 @@ ul > li > h6 {
 	list-style-type: none;
 	flex-wrap: wrap;
 }
-#logos > ul > li {
-	flex: 1; 
+.logo {
+	flex: 1 0 50%; 
 }
 
 #logos > ul > li > a > img {
@@ -910,6 +927,7 @@ ul > li > h6 {
 	flex-direction: column;
 	width: 100%;
 	align-items: center;
+	padding: 0 0 10% 0;
 }
 
 #contact a:hover {
